@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="<% settings.charset %>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>d2bootstrap</title>
+  <link rel="stylesheet" href="<% request.uri_base %>/css/style.css">
+
+<script type="text/javascript">
+    !window.jQuery && document.write('<script type="text/javascript" src="<% request.uri_base %>/javascripts/jquery.js"><\/script>')
+</script>
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="<% request.uri_base %>/bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+
+<!-- Latest compiled JavaScript -->
+<!-- Grab jQuery from a CDN, fall back to local if necessary -->
+<script type="text/javascript">
+ !(typeof $().emulateTransitionEnd == 'function') && document.write('<script type="text/javascript" src="<% request.uri_base %>/bower_components/bootstrap/dist/js/bootstrap.min.js"><\/script>')
+</script>
+
+</head>
+<body>
+<% content %>
+<div id="footer">
+Powered by <a href="http://perldancer.org/">Dancer2</a> <% dancer_version %>
+</div>
+</body>
+</html>
