@@ -1,2 +1,2 @@
-* Dancer2 Bootstrap Demo
+* Dancer2 Bootstrap Example
 an example of using bootstrap with Dancer2
